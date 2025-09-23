@@ -1,13 +1,13 @@
 import './App.css'
 import Header from './components/Header/Header.jsx'
-import About from './components/About/About.jsx'
+import Main from './components/Main/Main.jsx'
 
 function App() {
 
   return (
     <>
       <Header />
-      <About />
+      <Main />
     </>
   )
 }

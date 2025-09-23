@@ -1,19 +1,20 @@
 /* Apply the red background site-wide for this section */
-.about {
+.main {
   background-color: #c91100;
   color: #fff;
   padding: 2rem;
   text-align: center;
+  margin-top: 60px;  /* match or exceed your header’s height */
 }
 
-.about-header {
+.main-header {
   position: relative;
   margin-bottom: 2rem;
 }
 
 /* Larger, special styling for the pizzeria name */
 #pizzeria-name {
-  font-size: 3rem;
+  font-size: 6rem;
   margin: 0;
 }
 
@@ -22,23 +23,25 @@
 }
 
 /* “Since 1960” on the right side of the header */
+/* Remove absolute positioning */
 #since-text {
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: static;     /* was absolute */
+  display: block;       /* ensures it starts on a new line */
+  margin-top: 0.5rem;   /* small space below the name */
   font-size: 1.2rem;
-  margin: 0;
+  text-align: center;   /* keep it centered */
 }
 
+
 /* Three pictures in a row with space */
-.about-photos {
+.main-photos {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin: 2rem 0;
 }
 
-.about-photos img {
+.main-photos img {
   width: 200px;
   height: auto;
   border-radius: 8px;
@@ -46,9 +49,15 @@
 }
 
 /* Testimonial styling */
-.about-testimonial {
+.main-testimonial {
   font-style: italic;
   font-size: 1.1rem;
   max-width: 600px;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .main {
+    margin-top: 80px; /* slightly bigger to account for larger header */
+  }
 }

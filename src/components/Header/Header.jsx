@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header>
       <div className="header-inner">
-        <h1 className="header-title">THE BEST OF THE SOUTHSIDE</h1>
+        <h1 className="header-title">THE BEST IN CHICAGO</h1>
 
         <Hamburger
           toggled={isOpen}

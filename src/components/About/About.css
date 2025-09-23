@@ -1,0 +1,54 @@
+/* Apply the red background site-wide for this section */
+.about {
+  background-color: #c91100;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about-header {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+/* Larger, special styling for the pizzeria name */
+#pizzeria-name {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.phils {
+  color: #419572; /* PHIL'S gets the green shade */
+}
+
+/* “Since 1960” on the right side of the header */
+#since-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Three pictures in a row with space */
+.about-photos {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.about-photos img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Testimonial styling */
+.about-testimonial {
+  font-style: italic;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}

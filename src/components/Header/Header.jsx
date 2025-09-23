@@ -26,6 +26,7 @@ export default function Header() {
             <li><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
             <li><a href="#gallery" onClick={() => setIsOpen(false)}>Gallery</a></li>
             <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
+            <li><a href="#contact" onClick={() => setIsOpen(false)}>Order Now</a></li>
           </ul>
         </nav>
       )}

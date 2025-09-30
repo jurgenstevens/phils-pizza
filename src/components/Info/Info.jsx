@@ -3,13 +3,36 @@ import "./Info.css";
 export default function Info() {
   return (
     <section className="info">
-      <div className="info-card">
-        <h2>OPEN 7 DAYS A WEEK</h2>
-        <p>SUNDAY - 4:00 PM TO 11:00 PM</p>
-        <p>MONDAY THRU THURSDAY - 4:00 PM TO 11:00 PM</p>
-        <p>FRIDAY & SATURDAY - 4:00 PM TO MIDNIGHT</p>
-        <p>PRICES SUBJECT TO CHANGE WITHOUT NOTICE</p>
-        <p>TAX & DELIVERY NOT INCLUDED</p>
+      <div className="info-inner">
+
+        {/* ===== LEFT COLUMN: HOURS ===== */}
+        <div className="info-left">
+          <h2>Hours</h2>
+          <h3>Open 7 days a week!</h3>
+          <h3>Sunday - 4:00 PM to 11:00 PM</h3>
+          <h3>Monday thru Thursday - 4:00 PM to 11:00 PM</h3>
+          <h3>Friday & Saturday - 4:00 PM to midnight</h3>
+          <br />
+          <h3>Prices subject to change without notice</h3>
+          <h3>Tax & delivery not included</h3>
+        </div>
+
+        {/* ===== RIGHT COLUMN: CONTACT + ADDRESS ===== */}
+        <div className="info-right">
+          {/* Contact */}
+          <div className="info-card">
+            <h2>Contact</h2>
+            <h3>(773) 523-0947 or (773) 548-3203</h3>
+          </div>
+
+          {/* Address */}
+          <div className="info-card">
+            <h2>Address</h2>
+            <h3>1102 W 35th St.</h3>
+            <h3>Chicago, IL 60609</h3>
+          </div>
+        </div>
+
       </div>
     </section>
   );

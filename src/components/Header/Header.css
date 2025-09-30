@@ -6,7 +6,7 @@ header {
   width: 100%;
   background-color: #c91100;
   color: white;
-  z-index: 50;
+  z-index: 800;
 }
 
 ul {

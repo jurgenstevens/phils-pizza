@@ -6,11 +6,13 @@
   width: 100%;            
   box-sizing: border-box;
   overflow-x: hidden;
+  margin-top: 60px;
 }
 
 .main-header {
   position: relative;
   margin-bottom: 2rem;
+  z-index: 1;
 }
 
 #pizzeria-name {
@@ -112,7 +114,7 @@
 /* ================== Desktop adjustments ================== */
 @media (min-width: 768px) {
   .main {
-    margin-top: 80px;
+    margin-top: 60px;
   }
 
   .photo-top {

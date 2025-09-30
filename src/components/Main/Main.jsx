@@ -11,10 +11,23 @@ export default function Main() {
       </header>
 
       <div className="main-photos">
-        {/* Replace the src values with your actual image paths */}
-        <img src="/images/photo1.jpg" alt="Phil's Pizza interior" />
-        <img src="/images/photo2.jpg" alt="Delicious pizza slice" />
-        <img src="/images/photo3.jpg" alt="Customers enjoying pizza" />
+        <div className="photo-wrapper">
+          <img
+            className="photo-top"
+            src="src/assets/phils_sandynoto_chicago.avif"
+            alt="Phil's Pizza"
+          />
+          <img
+            className="photo-side left"
+            src="src/assets/phils-intersection.jpeg"
+            alt="Street intersection"
+          />
+          <img
+            className="photo-side right"
+            src="src/assets/phils-pizza-crowd.png"
+            alt="Customers waiting for their pizza"
+          />
+        </div>
       </div>
 
       <div className="main-testimonial">

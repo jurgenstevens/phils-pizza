@@ -1,10 +1,11 @@
-/* Apply the red background site-wide for this section */
 .main {
   background-color: #c91100;
   color: #fff;
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
-  margin-top: 60px;  /* match or exceed your header’s height */
+  width: 100%;            
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .main-header {
@@ -12,52 +13,114 @@
   margin-bottom: 2rem;
 }
 
-/* Larger, special styling for the pizzeria name */
 #pizzeria-name {
   font-size: 6rem;
   margin: 0;
 }
 
 .phils {
-  color: #419572; /* PHIL'S gets the green shade */
+  color: #419572;
 }
 
-/* “Since 1960” on the right side of the header */
-/* Remove absolute positioning */
 #since-text {
-  position: static;     /* was absolute */
-  display: block;       /* ensures it starts on a new line */
-  margin-top: 0.5rem;   /* small space below the name */
+  display: block;
+  margin-top: 0.5rem;
   font-size: 1.2rem;
-  text-align: center;   /* keep it centered */
+  text-align: center;
 }
 
-
-/* Three pictures in a row with space */
 .main-photos {
+  position: relative;
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  margin: 2rem 0;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 6rem 0 6rem 0;  /* remove horizontal padding to avoid shift */
+  gap: 2rem;
+  flex-wrap: nowrap;
 }
 
-.main-photos img {
-  width: 200px;
+.photo-wrapper {
+  position: relative;
+  display: inline-block;   /* keeps wrapper tight around images */
+}
+
+.photo-top {
+  position: absolute;
+  top: -50px;               /* desktop overlap */
+  left: 50%;                /* center horizontally */
+  transform: translateX(-50%); /* adjust for width of the image */
+  z-index: 2;
+  width: 400px;
   height: auto;
   border-radius: 8px;
   object-fit: cover;
 }
 
-/* Testimonial styling */
-.main-testimonial {
-  font-style: italic;
-  font-size: 1.1rem;
-  max-width: 600px;
-  margin: 0 auto;
+.photo-side {
+  width: 400px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  z-index: 1;
+  transition: transform 0.3s ease;
 }
 
+.photo-side.left {
+  transform: rotate(-25deg);
+}
+
+.photo-side.right {
+  transform: rotate(15deg);
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  .main-photos {
+    flex-direction: column; /* let images stack instead of rigid row */
+    align-items: center;
+    gap: 1.5rem;
+    padding: 4rem 0; /* reduce padding but add enough to fit overlap */
+  }
+
+  .photo-top {
+    position: relative;  /* instead of absolute on mobile */
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 80vw;
+    max-width: 300px;
+    margin-bottom: -1rem; /* subtle overlap with next row */
+  }
+
+  .photo-side {
+    width: 70vw;
+    max-width: 260px;
+  }
+
+  .photo-side.left {
+    transform: rotate(-10deg);
+  }
+
+  .photo-side.right {
+    transform: rotate(8deg);
+  }
+}
+
+
+
+/* ================== Desktop adjustments ================== */
 @media (min-width: 768px) {
   .main {
-    margin-top: 80px; /* slightly bigger to account for larger header */
+    margin-top: 80px;
+  }
+
+  .photo-top {
+    width: 400px;
+    top: -50px;
+  }
+
+  .photo-side {
+    width: 400px;
   }
 }

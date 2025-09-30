@@ -40,25 +40,30 @@ export default function Menu() {
           </table>
         </div>
 
-        {/* ===== SANDWICHES ===== */}
-        <div className="menu-card">
-          <h2>SANDWICHES</h2>
-          <ul>
-            <li>Beef Sandwich $8.10</li>
-            <li>Sausage Sandwich $8.10</li>
-            <li>Meatball Sandwich $8.10</li>
-            <li>French Fries $2.70</li>
-          </ul>
-        </div>
+        {/* ===== RIGHT COLUMN ===== */}
+        <div className="menu-right">
 
-        {/* ===== DINNERS ===== */}
-        <div className="menu-card">
-          <h2>DINNERS</h2>
-          <ul>
-            <li>Spaghetti Dinner $7.20</li>
-            <li>Mostaccioli Dinner $7.20</li>
-            <li>Ravioli Dinner $8.10</li>
-          </ul>
+          {/* ===== SANDWICHES ===== */}
+          <div className="menu-card">
+            <h2>SANDWICHES</h2>
+            <ul>
+              <li>Beef Sandwich $8.10</li>
+              <li>Sausage Sandwich $8.10</li>
+              <li>Meatball Sandwich $8.10</li>
+              <li>French Fries $2.70</li>
+            </ul>
+          </div>
+
+          {/* ===== DINNERS ===== */}
+          <div className="menu-card">
+            <h2>DINNERS</h2>
+            <ul>
+              <li>Spaghetti Dinner $7.20</li>
+              <li>Mostaccioli Dinner $7.20</li>
+              <li>Ravioli Dinner $8.10</li>
+            </ul>
+          </div>
+
         </div>
 
       </div>

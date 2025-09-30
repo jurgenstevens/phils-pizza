@@ -2,7 +2,7 @@ import "./Info.css";
 
 export default function Info() {
   return (
-    <section className="info">
+    <section id="info" className="info">
       <div className="info-inner">
 
         {/* ===== LEFT COLUMN: HOURS ===== */}

@@ -2,7 +2,7 @@ import "./Main.css"; // keep styles separate for this component
 
 export default function Main() {
   return (
-    <section className="main">
+    <section id="main" className="main">
       <header className="main-header">
         <h1 id="pizzeria-name">
           <span className="phils">PHIL'S</span> PIZZA

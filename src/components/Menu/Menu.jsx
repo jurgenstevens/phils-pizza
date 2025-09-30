@@ -2,7 +2,7 @@ import "./Menu.css";
 
 export default function Menu() {
   return (
-    <section className="menu">
+    <section id="menu" className="menu">
       <div className="menu-inner">
 
         {/* ===== PIZZA ===== */}

@@ -27,11 +27,9 @@ export default function Header() {
         {/* Desktop nav stacked under title */}
         <nav className="desktop-nav">
           <ul>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#order-now">Order Now</a></li>
+            <li><a href="#menu" onClick={() => setIsOpen(false)}>Menu</a></li>
+            <li><a href="#info" onClick={() => setIsOpen(false)}>Info</a></li>
+            <li><a href="#order-now" onClick={() => setIsOpen(false)}>📞 Order Now</a></li>
           </ul>
         </nav>
       </div>
@@ -41,10 +39,8 @@ export default function Header() {
         <nav className="mobile-nav">
           <ul>
             <li><a href="#menu" onClick={() => setIsOpen(false)}>Menu</a></li>
-            <li><a href="#gallery" onClick={() => setIsOpen(false)}>Gallery</a></li>
-            <li><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
-            <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
-            <li><a href="#order-now" onClick={() => setIsOpen(false)}>Order Now</a></li>
+            <li><a href="#info" onClick={() => setIsOpen(false)}>Info</a></li>
+            <li><a href="#order-now" onClick={() => setIsOpen(false)}>📞 Order Now</a></li>
           </ul>
         </nav>
       )}

@@ -2,6 +2,7 @@ import './App.css'
 import Header from './components/Header/Header.jsx'
 import Main from './components/Main/Main.jsx'
 import Menu from './components/Menu/Menu.jsx'
+import Info from './components/Info/Info.jsx'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Main />
       <Menu />
+      <Info />
     </>
   )
 }

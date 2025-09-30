@@ -20,21 +20,44 @@
 }
 
 /* Make right column cards stretch evenly to match pizza height */
+/* ===== Center content vertically in Sandwiches and Dinners ===== */
 .menu-right .menu-card {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  align-items: center;     /* horizontal centering */
+  flex: 1;                 /* still stretch evenly to match pizza height */
+  text-align: center;      /* center text inside the card */
 }
 
 .menu-card {
   background-color: #f5e0bd; /* beige background */
   border-radius: 12px;
   padding: 1.5rem;
+}
+
+/* ===== Center content for pizza and sandwiches ===== */
+.menu-card h2,
+.menu-card p,
+.menu-card ul,
+.menu-card table,
+.menu-card li {
   text-align: center;
 }
 
+/* ===== h2 styling ===== */
 .menu-card h2 {
   font-size: 1.8rem;
   font-weight: 900;
   margin-bottom: 1rem;
+}
+
+/* ===== Slightly bold all other text ===== */
+.menu-card p,
+.menu-card td,
+.menu-card th,
+.menu-card li {
+  font-weight: 600;
 }
 
 .menu-note {

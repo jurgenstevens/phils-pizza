@@ -31,6 +31,8 @@ export default function Info() {
             <h3>1102 W 35th St.</h3>
             <h3>Chicago, IL 60609</h3>
           </div>
+          <br />
+          <p>Developed by <a href="https://www.jurgenstevens.dev/">Jurgen Stevens</a></p>
         </div>
 
       </div>

@@ -4,6 +4,12 @@
   color: black; /* default text color */
 }
 
+.menu-font {
+  font-family: "Lobster", cursive;
+  font-weight: 600;
+  font-style: normal;
+}
+
 .menu-inner {
   display: grid;
   grid-template-columns: 2fr 1fr; /* pizza 2/3, right column 1/3 */

@@ -7,7 +7,7 @@ export default function Menu() {
 
         {/* ===== PIZZA ===== */}
         <div className="menu-card">
-          <h2>PIZZA</h2>
+          <h2 className="menu-font">PIZZA</h2>
           <p className="menu-note">Tax not included</p>
           <table className="menu-table">
             <thead>
@@ -45,7 +45,7 @@ export default function Menu() {
 
           {/* ===== SANDWICHES ===== */}
           <div className="menu-card">
-            <h2>SANDWICHES</h2>
+            <h2 className="menu-font">SANDWICHES</h2>
             <ul>
               <li>Beef Sandwich $8.10</li>
               <li>Sausage Sandwich $8.10</li>
@@ -56,7 +56,7 @@ export default function Menu() {
 
           {/* ===== DINNERS ===== */}
           <div className="menu-card">
-            <h2>DINNERS</h2>
+            <h2 className="menu-font">DINNERS</h2>
             <ul>
               <li>Spaghetti Dinner $7.20</li>
               <li>Mostaccioli Dinner $7.20</li>

@@ -32,8 +32,8 @@ export default function Main() {
 
       <div className="main-testimonial">
         <p>
-          “Best pizza in town! Crispy crust, perfectly seasoned sauce, and that
-          classic neighborhood vibe that keeps us coming back for decades.”
+          “What can I say? This right here is Chicago-style pizza. That hot, delicious, thin-crust, tavern pizza. May places like this stay
+around forever because it's so good.” - M.C. ★★★★★
         </p>
       </div>
     </section>

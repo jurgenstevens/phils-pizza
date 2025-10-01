@@ -1,15 +1,17 @@
 .menu {
   background-color: #c91100; /* outer red background */
   padding: 2rem 1rem;
-  color: black; /* make all text black by default */
+  color: black; /* default text color */
 }
 
 .menu-inner {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* pizza takes 2/3, right column 1/3 */
+  grid-template-columns: 2fr 1fr; /* pizza 2/3, right column 1/3 */
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;          /* side padding for small screens */
+  box-sizing: border-box;   /* prevent overflow from padding */
 }
 
 /* Right column wrapper */
@@ -19,15 +21,14 @@
   gap: 1rem; /* space between sandwiches and dinners */
 }
 
-/* Make right column cards stretch evenly to match pizza height */
-/* ===== Center content vertically in Sandwiches and Dinners ===== */
+/* Right column cards: vertical + horizontal centering */
 .menu-right .menu-card {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* vertical centering */
-  align-items: center;     /* horizontal centering */
-  flex: 1;                 /* still stretch evenly to match pizza height */
-  text-align: center;      /* center text inside the card */
+  justify-content: center;
+  align-items: center;
+  flex: 1;             /* stretch to match pizza height */
+  text-align: center;  /* center text inside card */
 }
 
 .menu-card {
@@ -36,7 +37,7 @@
   padding: 1.5rem;
 }
 
-/* ===== Center content for pizza and sandwiches ===== */
+/* Center content for pizza and sandwiches */
 .menu-card h2,
 .menu-card p,
 .menu-card ul,
@@ -45,14 +46,14 @@
   text-align: center;
 }
 
-/* ===== h2 styling ===== */
+/* H2 styling */
 .menu-card h2 {
   font-size: 1.8rem;
   font-weight: 900;
   margin-bottom: 1rem;
 }
 
-/* ===== Slightly bold all other text ===== */
+/* Slightly bold other text */
 .menu-card p,
 .menu-card td,
 .menu-card th,
@@ -66,11 +67,20 @@
   margin-bottom: 1rem;
 }
 
-/* ====== Pizza Table ====== */
+/* ===== WRAPPER for table to allow horizontal scroll ===== */
+.menu-table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+/* Pizza table */
 .menu-table {
   width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
   font-size: 0.9rem;
+  table-layout: fixed;   /* even column widths */
+  display: table;        /* standard table display */
 }
 
 .menu-table th,
@@ -82,7 +92,7 @@
   font-weight: 700;
 }
 
-/* ====== Lists ====== */
+/* Lists */
 .menu-card ul {
   list-style: none;
   padding: 0;
@@ -93,10 +103,11 @@
   margin: 0.5rem 0;
 }
 
-/* ========== Mobile Adjustments ========== */
+/* ===== Mobile adjustments ===== */
 @media (max-width: 767px) {
   .menu-inner {
-    grid-template-columns: 1fr; /* stack cards */
+    grid-template-columns: 1fr; /* stack pizza + right column */
+    padding: 0 1rem;            /* keep side padding */
   }
 
   .menu-card {
@@ -110,4 +121,51 @@
   .menu-table {
     font-size: 0.8rem;
   }
+}
+
+/* ===== Very small screens: stacked pizza rows ===== */
+@media (max-width: 480px) {
+  /* Hide the standard table on tiny screens */
+  .menu-table-wrapper {
+    display: none;
+  }
+
+  /* Mobile stacked table container */
+  .menu-mobile-table {
+    display: block;
+  }
+
+  .mobile-pizza-row {
+    background-color: #f5e0bd; /* keep beige background */
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .mobile-pizza-row p {
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .mobile-pizza-row ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobile-pizza-row li {
+    font-weight: 600;
+    margin: 0.25rem 0;
+  }
+
+  .menu-right {
+    margin-top: 1rem;
+  }
+}
+
+/* Default: hide mobile stacked pizza table on larger screens */
+.menu-mobile-table {
+  display: none;
 }

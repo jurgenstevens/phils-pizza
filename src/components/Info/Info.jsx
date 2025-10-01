@@ -7,7 +7,7 @@ export default function Info() {
 
         {/* ===== LEFT COLUMN: HOURS ===== */}
         <div className="info-left">
-          <h2>Hours</h2>
+          <h2 className="info-font">Hours</h2>
           <h3>Open 7 days a week!</h3>
           <h3>Sunday - 4:00 PM to 11:00 PM</h3>
           <h3>Monday thru Thursday - 4:00 PM to 11:00 PM</h3>
@@ -21,13 +21,13 @@ export default function Info() {
         <div className="info-right">
           {/* Contact */}
           <div className="info-card">
-            <h2>Contact</h2>
+            <h2 className="info-font">Contact</h2>
             <h3>(773) 523-0947 or (773) 548-3203</h3>
           </div>
 
           {/* Address */}
           <div className="info-card">
-            <h2>Address</h2>
+            <h2 className="info-font">Address</h2>
             <h3>1102 W 35th St.</h3>
             <h3>Chicago, IL 60609</h3>
           </div>

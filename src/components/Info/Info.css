@@ -6,6 +6,12 @@
   color: white;
 }
 
+.info-font {
+  font-family: "Lobster", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .info-inner {
   display: grid;
   grid-template-columns: 2fr 1fr; /* left = 2/3, right = 1/3 */

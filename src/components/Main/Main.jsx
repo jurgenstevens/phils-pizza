@@ -14,17 +14,17 @@ export default function Main() {
         <div className="photo-wrapper">
           <img
             className="photo-top"
-            src="src/assets/phils_sandynoto_chicago.avif"
+            src="/phils_sandynoto_chicago.avif"
             alt="Phil's Pizza"
           />
           <img
             className="photo-side left"
-            src="src/assets/phils-intersection.jpeg"
+            src="/phils-intersection.jpeg"
             alt="Street intersection"
           />
           <img
             className="photo-side right"
-            src="src/assets/phils-pizza-crowd.png"
+            src="/phils-pizza-crowd.png"
             alt="Customers waiting for their pizza"
           />
         </div>

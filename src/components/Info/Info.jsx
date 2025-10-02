@@ -39,16 +39,14 @@ export default function Info() {
             <div className="info-card">
               <h2 className="info-font">Contact</h2>
               <h3>(773) 523-0947 or (773) 548-3203</h3>
-              <br />
           </div>
-
           {/* Address */}
           <div className="info-card">
             <h2 className="info-font">Address</h2>
             <h3>1102 W 35th St.</h3>
             <h3>Chicago, IL 60609</h3>
           </div>
-          <p className="info-font">Developed by <a href="https://www.jurgenstevens.dev/">Jurgen Stevens</a></p>
+          <p> <span className="info-font">Developed by </span><a href="https://www.jurgenstevens.dev/"><b>Jurgen Stevens</b></a></p>
         </div>
       </div>
     </section>

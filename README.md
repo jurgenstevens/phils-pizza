@@ -3,6 +3,8 @@
 A responsive React web app for **Phil's Pizza**, a southside Chicago pizzeria.  
 The site features the full menu, about section, contact details, hours, and location — all optimized for desktop and mobile screens.
 
+Visit the website [here](https://philspizzachicago.netlify.app/)!
+
 ---
 
 ## 🚀 Features
@@ -36,9 +38,3 @@ The site features the full menu, about section, contact details, hours, and loca
 
 ---
 
-## 📦 Installation & Setup
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/yourusername/phils-pizza.git
-   cd phils-pizza

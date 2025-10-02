@@ -6,39 +6,50 @@ export default function Menu() {
       <div className="menu-inner">
 
         {/* ===== PIZZA ===== */}
-        <div className="menu-card">
-          <h2 className="menu-font">PIZZA</h2>
-          <p className="menu-note">Tax not included</p>
-          <table className="menu-table">
-            <thead>
-              <tr>
-                <th></th>
-                <th>Small</th>
-                <th>Med</th>
-                <th>Large</th>
-                <th>Jumbo</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>Cheese</td><td>$10.40</td><td>$14.25</td><td>$19.35</td><td>$24.40</td></tr>
-              <tr><td>Sausage</td><td>$11.50</td><td>$15.30</td><td>$20.10</td><td>$26.25</td></tr>
-              <tr><td>Green Pepper</td><td>$11.50</td><td>$15.30</td><td>$20.10</td><td>$26.25</td></tr>
-              <tr><td>Onion</td><td>$11.50</td><td>$15.30</td><td>$20.10</td><td>$26.25</td></tr>
-              <tr><td>Pepperoni</td><td>$11.50</td><td>$15.30</td><td>$20.10</td><td>$26.25</td></tr>
-              <tr><td>Mushroom</td><td>$11.50</td><td>$15.30</td><td>$20.10</td><td>$26.25</td></tr>
-              <tr><td>Olive</td><td>$11.50</td><td>$15.30</td><td>$20.10</td><td>$26.25</td></tr>
-              <tr><td>Fresh Garlic</td><td>$11.50</td><td>$15.30</td><td>$20.10</td><td>$26.25</td></tr>
-              <tr><td>Spinach</td><td>$11.50</td><td>$15.30</td><td>$20.10</td><td>$26.25</td></tr>
-              <tr><td>Anchovies</td><td>$11.50</td><td>$15.30</td><td>$20.10</td><td>$26.25</td></tr>
-              <tr><td>Giardiniera / Jalapeno</td><td>$11.50</td><td>$15.30</td><td>$20.10</td><td>$26.25</td></tr>
-              <tr><td>Bacon</td><td>$12.40</td><td>$16.20</td><td>$20.90</td><td>$27.70</td></tr>
-              <tr><td>Tomato</td><td>$12.40</td><td>$16.20</td><td>$20.90</td><td>$27.70</td></tr>
-              <tr><td>Beef</td><td>$12.40</td><td>$16.20</td><td>$20.90</td><td>$27.70</td></tr>
-              <tr><td>Sausage & Mushroom</td><td>$12.40</td><td>$16.20</td><td>$20.90</td><td>$27.70</td></tr>
-              <tr><td>Special</td><td>$14.05</td><td>$17.70</td><td>$22.75</td><td>$29.45</td></tr>
-            </tbody>
-          </table>
-        </div>
+<div className="menu-card">
+  <h2 className="menu-font">PIZZA</h2>
+  <p className="menu-note">Tax not included</p>
+
+  <div className="menu-section">
+    <h3>Cheese Pizza</h3>
+    <ul className="menu-list">
+      <li>Small … $10.40</li>
+      <li>Medium … $14.25</li>
+      <li>Large … $19.35</li>
+      <li>Jumbo … $24.40</li>
+    </ul>
+  </div>
+
+  <div className="menu-section">
+    <h3>Additional Toppings</h3>
+    <ul className="menu-list">
+      <li>
+        Sausage, Green Pepper, Onion, Pepperoni, Mushroom, Olive, Fresh Garlic,
+        Spinach, Anchovies, Giardiniera, Jalapeño <br />
+        <span className="menu-prices">
+          + $1.10 (S) / + $1.05 (M) / + $0.75 (L) / + $1.85 (J)
+        </span>
+      </li>
+      <li>
+        Bacon, Tomato, Beef, Sausage & Mushroom <br />
+        <span className="menu-prices">
+          + $2.00 (S) / + $1.95 (M) / + $1.55 (L) / + $3.30 (J)
+        </span>
+      </li>
+    </ul>
+  </div>
+
+  <div className="menu-section">
+    <h3>Special Pizza</h3>
+    <ul className="menu-list">
+      <li>Small … $14.05</li>
+      <li>Medium … $17.70</li>
+      <li>Large … $22.75</li>
+      <li>Jumbo … $29.45</li>
+    </ul>
+  </div>
+</div>
+
 
         {/* ===== RIGHT COLUMN ===== */}
         <div className="menu-right">

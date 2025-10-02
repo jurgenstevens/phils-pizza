@@ -28,8 +28,9 @@ export default function Header() {
         <nav className="desktop-nav">
           <ul>
             <li><a href="#menu" onClick={() => setIsOpen(false)}>Menu</a></li>
+            <li><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
             <li><a href="#info" onClick={() => setIsOpen(false)}>Info</a></li>
-            <li><a href="tel:7735230947" onClick={() => setIsOpen(false)}>📞 Order Now</a></li>
+            <li><a href="#info" onClick={() => setIsOpen(false)}>📞 Order Now</a></li>
           </ul>
         </nav>
       </div>
@@ -39,6 +40,7 @@ export default function Header() {
         <nav className="mobile-nav">
           <ul>
             <li><a href="#menu" onClick={() => setIsOpen(false)}>Menu</a></li>
+            <li><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
             <li><a href="#info" onClick={() => setIsOpen(false)}>Info</a></li>
             <li><a href="tel:7735230947" onClick={() => setIsOpen(false)}>📞 Order Now</a></li>
           </ul>

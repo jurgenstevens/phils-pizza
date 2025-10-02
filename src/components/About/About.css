@@ -1,0 +1,55 @@
+/* Container styling */
+.about {
+  background-color: #c91100; /* same red as menu outer background */
+  color: white; /* white text for contrast */
+  padding: 2rem 1rem;
+}
+
+.about-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* Card styling (blend with red background) */
+.about-card {
+  /* No beige background now, just center text */
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Lobster font for the heading */
+.lobster-font {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: white; /* ensure heading is white */
+}
+
+/* Paragraph styling */
+.about-card p {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: white; /* white text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .about-card {
+    padding: 1.5rem;
+  }
+
+  .lobster-font {
+    font-size: 1.6rem;
+  }
+
+  .about-card p {
+    font-size: 0.95rem;
+  }
+}

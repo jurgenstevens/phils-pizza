@@ -1,12 +1,44 @@
-# React + Vite
+# Phil's Pizza 🍕
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React web app for **Phil's Pizza**, a southside Chicago pizzeria.  
+The site features the full menu, about section, contact details, hours, and location — all optimized for desktop and mobile screens.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 📱 **Mobile-first design** – Responsive layout for all devices  
+- 🍕 **Full Menu** – Pizzas, sandwiches, and dinners with clear pricing  
+- 🏠 **About Us Section** – Story and history of Phil’s Pizza  
+- 📍 **Contact & Location** – Phone numbers, address, and embedded social links  
+- 🔗 **Social Media Integration** – Facebook and Yelp links via [react-social-icons](https://www.npmjs.com/package/react-social-icons)  
+- 🎨 **Custom Styling** – Red/white theme with [Google Fonts](https://fonts.google.com/) (Lobster) for branding  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🖼️ Screenshots
+
+### 💻 Desktop View
+<img width="800" alt="Desktop Screenshot" src="./public/mvp-desktop-image.png" />
+
+
+### 📱 Mobile View
+<img width="800" alt="Desktop Screenshot" src="./public/mvp-mobile-image.png" />
+
+
+## 🛠️ Technologies Used
+
+- **React** (Vite for fast development)  
+- **CSS** for custom styling (responsive flexbox layout)  
+- **Google Fonts** (Lobster) for branding typography  
+- **react-social-icons** for social media links  
+- **Netlify** (deployment)  
+
+---
+
+## 📦 Installation & Setup
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/yourusername/phils-pizza.git
+   cd phils-pizza
